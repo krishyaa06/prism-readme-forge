@@ -1,0 +1,29 @@
+    <section class="grid forge">
+      <form class="card form" id="form" autocomplete="off">
+        <div class="card-title"><h2>Project details</h2><div class="row"><button type="button" class="btn small" id="example">Example</button><button type="button" class="btn small ghost" id="reset">Reset</button></div></div>
+        <div class="grid g2"><label class="field">Project name<input name="name" /></label><label class="field">Tagline<input name="tagline" /></label></div>
+        <div class="grid g2"><label class="field">GitHub user<input name="user" /></label><label class="field">Repo<input name="repo" /></label></div>
+        <label class="field">About<textarea name="about" rows="3"></textarea></label>
+        <label class="field">Features (one per line)<textarea name="features" rows="4"></textarea></label>
+        <div class="field"><span>Tech stack</span><div class="chips" id="stack"></div></div>
+        <div class="grid g2"><label class="field">Live demo URL<input name="demo" /></label><label class="field">Screenshot URL<input name="screenshot" /></label></div>
+        <label class="field">Usage (Markdown)<textarea name="usage" rows="3"></textarea></label>
+        <label class="field">Env variables (KEY=description per line)<textarea name="env" rows="2"></textarea></label>
+        <label class="field">Roadmap (one per line, prefix [x] when done)<textarea name="roadmap" rows="3"></textarea></label>
+        <div class="grid g2"><label class="field">Author<input name="author" /></label><label class="field">License<select name="license"><option>MIT</option><option>Apache-2.0</option><option>GPL-3.0</option><option value="">None</option></select></label></div>
+        <div class="row opts">
+          <label class="check"><input type="checkbox" name="header" checked /> Wave header</label>
+          <label class="check"><input type="checkbox" name="toc" checked /> Table of contents</label>
+          <label class="check"><input type="checkbox" name="contributing" checked /> Contributing</label>
+          <label class="check"><input type="checkbox" name="star" checked /> Star CTA</label>
+        </div>
+        <div class="field"><span>GitHub badges</span><div class="row"><label class="check"><input type="checkbox" name="b-stars" checked /> Stars</label><label class="check"><input type="checkbox" name="b-license" checked /> License</label><label class="check"><input type="checkbox" name="b-issues" /> Issues</label><label class="check"><input type="checkbox" name="b-commit" checked /> Last commit</label></div></div>
+      </form>
+      <div class="card out-card">
+        <div class="card-title"><div class="tabs" id="view"><button class="on" data-v="preview">Preview</button><button data-v="md">Markdown</button></div>
+          <div class="row"><span class="pill" id="score"></span><button class="btn small" id="copy">Copy</button><button class="btn small primary" id="dl">README.md</button></div></div>
+        <div id="checks" class="row checks"></div>
+        <div class="md preview" id="preview"></div>
+        <pre class="out" id="raw" hidden></pre>
+      </div>
+    </section>

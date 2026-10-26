@@ -1,0 +1,17 @@
+.md{line-height:1.7;color:var(--text-2);font-size:14.5px;overflow-wrap:anywhere}
+.md h1,.md h2,.md h3{color:var(--text);letter-spacing:-.02em;line-height:1.25;margin:1.2em 0 .5em}.md h1{font-size:28px;border-bottom:1px solid var(--line);padding-bottom:.3em}.md h2{font-size:21px;border-bottom:1px solid var(--line);padding-bottom:.3em}.md h3{font-size:17px}
+.md>:first-child{margin-top:0}.md p{margin:.6em 0}.md a{color:var(--accent)}
+.md code{padding:2px 6px;border-radius:6px;background:#ffffff0d;font:12.5px var(--mono);color:var(--text)}
+.md pre{padding:14px;border:1px solid var(--line);border-radius:10px;background:#05070d;overflow:auto}.md pre code{padding:0;background:none}
+.md blockquote{margin:.8em 0;padding:.2em 1em;border-left:3px solid var(--accent);color:var(--muted)}
+.md table{border-collapse:collapse;margin:.8em 0;width:100%}.md th,.md td{border:1px solid var(--line);padding:6px 10px;text-align:left}.md th{background:#ffffff06;color:var(--text)}
+.md img{max-width:100%;vertical-align:middle}.md hr{border:0;border-top:1px solid var(--line);margin:1.4em 0}.md ul,.md ol{padding-left:1.4em}
+.md .raw p{margin:.4em 0}.md .raw[align],.md .raw p[align=center]{text-align:center}
+.forge{grid-template-columns:1fr 1.1fr;align-items:start}
+.form{display:flex;flex-direction:column;gap:12px}.form textarea{min-height:0;font-family:var(--sans);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chips button{padding:5px 10px;border:1px solid var(--line-2);border-radius:99px;background:none;color:var(--muted);font-size:12.5px;cursor:pointer}
+.chips button.on{border-color:color-mix(in srgb,var(--accent) 60%,transparent);color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.opts{gap:14px}.out-card{position:sticky;top:76px}
+.preview,#raw{max-height:calc(100vh - 220px);overflow:auto;padding:22px;border:1px solid var(--line);border-radius:12px;background:#0b0e1a}
+.checks{gap:5px;margin-bottom:12px}
+@media (max-width:860px){.forge{grid-template-columns:1fr}.out-card{position:static}}

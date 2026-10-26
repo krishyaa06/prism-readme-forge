@@ -1,0 +1,30 @@
+{
+  "name": "prism-readme-forge",
+  "version": "1.0.0",
+  "description": "Generate beautiful GitHub READMEs from a form, with badges, wave headers, live preview and a quality score.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "readme",
+    "readme-generator",
+    "github",
+    "markdown",
+    "shields-io",
+    "documentation",
+    "developer-tools",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-readme-forge.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-readme-forge/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism README Forge · Prism Protocol</title>
+  <meta name="description" content="Generate beautiful GitHub READMEs from a form, with badges, wave headers, live preview and a quality score." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="Prism README Forge · Prism Protocol" />
+  <meta property="og:description" content="Generate beautiful GitHub READMEs from a form, with badges, wave headers, live preview and a quality score." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <style>:root{--accent:#00D2FF;--accent-2:#3EE69A}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">◇</span><b>PRISM</b><span>README Forge</span></a>
+    <nav>
+      <a class="btn small" href="https://github.com/krishyaa06/prism-readme-forge" target="_blank" rel="noreferrer">★ GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">📝 Dev Tools</p>
+      <h1>READMEs that <em>get stars.</em></h1>
+      <p class="lead">Fill a short form and get a polished README with badges, wave header, tech stack, roadmap and more. Live preview, quality score, one-click download.</p>
+    </section>
+    <section class="grid forge">
+      <form class="card form" id="form" autocomplete="off">
+        <div class="card-title"><h2>Project details</h2><div class="row"><button type="button" class="btn small" id="example">Example</button><button type="button" class="btn small ghost" id="reset">Reset</button></div></div>
+        <div class="grid g2"><label class="field">Project name<input name="name" /></label><label class="field">Tagline<input name="tagline" /></label></div>
+        <div class="grid g2"><label class="field">GitHub user<input name="user" /></label><label class="field">Repo<input name="repo" /></label></div>
+        <label class="field">About<textarea name="about" rows="3"></textarea></label>
+        <label class="field">Features (one per line)<textarea name="features" rows="4"></textarea></label>
+        <div class="field"><span>Tech stack</span><div class="chips" id="stack"></div></div>
+        <div class="grid g2"><label class="field">Live demo URL<input name="demo" /></label><label class="field">Screenshot URL<input name="screenshot" /></label></div>
+        <label class="field">Usage (Markdown)<textarea name="usage" rows="3"></textarea></label>
+        <label class="field">Env variables (KEY=description per line)<textarea name="env" rows="2"></textarea></label>
+        <label class="field">Roadmap (one per line, prefix [x] when done)<textarea name="roadmap" rows="3"></textarea></label>
+        <div class="grid g2"><label class="field">Author<input name="author" /></label><label class="field">License<select name="license"><option>MIT</option><option>Apache-2.0</option><option>GPL-3.0</option><option value="">None</option></select></label></div>
+        <div class="row opts">
+          <label class="check"><input type="checkbox" name="header" checked /> Wave header</label>
+          <label class="check"><input type="checkbox" name="toc" checked /> Table of contents</label>
+          <label class="check"><input type="checkbox" name="contributing" checked /> Contributing</label>
+          <label class="check"><input type="checkbox" name="star" checked /> Star CTA</label>
+        </div>
+        <div class="field"><span>GitHub badges</span><div class="row"><label class="check"><input type="checkbox" name="b-stars" checked /> Stars</label><label class="check"><input type="checkbox" name="b-license" checked /> License</label><label class="check"><input type="checkbox" name="b-issues" /> Issues</label><label class="check"><input type="checkbox" name="b-commit" checked /> Last commit</label></div></div>
+      </form>
+      <div class="card out-card">
+        <div class="card-title"><div class="tabs" id="view"><button class="on" data-v="preview">Preview</button><button data-v="md">Markdown</button></div>
+          <div class="row"><span class="pill" id="score"></span><button class="btn small" id="copy">Copy</button><button class="btn small primary" id="dl">README.md</button></div></div>
+        <div id="checks" class="row checks"></div>
+        <div class="md preview" id="preview"></div>
+        <pre class="out" id="raw" hidden></pre>
+      </div>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <span>◇ Prism README Forge · Part of <a href="https://dc.gg/prismprotocol" target="_blank" rel="noreferrer">Prism Protocol</a></span>
+    <span><a href="https://github.com/krishyaa06/prism-readme-forge" target="_blank" rel="noreferrer">Source</a> · MIT License · Runs 100% in your browser</span>
+  </footer>
+  <script src="js/prism.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
